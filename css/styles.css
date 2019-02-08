@@ -1,0 +1,188 @@
+/*color palette
+#9B7682 - mauve
+#211A1C - slate black
+#84173F - claret
+#280C15 - plum
+#C6BEC1 - silver
+*/
+
+
+/* Index CSS */
+
+/*Global Styles*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 18px;
+    margin: 0;
+}
+h1, h2 {
+    font-family: 'Major Mono Display', monospace;
+}
+h1 {
+    font-size: 60px;
+}
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+}
+h3 {
+    margin: 0px;
+}
+a {
+    color: #84173F;
+}
+a:hover {
+    text-decoration: none;
+    color: #C6BEC1;
+}
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    overflow: hidden;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+/* .btn {
+  text-decoration: none;
+  padding: 10px;
+  background: white;
+} */
+
+
+/*Header and Footer*/
+header, footer {
+    background: #280C15;
+    color: #C6BEC1;
+}
+
+
+
+/*Header*/
+.profile-img {
+    border-radius: 50%;
+}
+header {
+  padding-top: 50px;
+  position: relative;
+  background: linear-gradient(rgba(33,26,28, 0.8), rgba(33,26,28, 0.5)),
+    url(../images/block-yarn.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+header h1, header h2 {
+    color: #C6BEC1;
+    margin: 0;
+    text-shadow: 2px 2px 2px #211A1C;
+}
+header p {
+  text-shadow: 2px 2px 2px #211A1C;
+}
+
+
+
+/*Navigation*/
+nav {
+  text-align: center;
+  background: #C6BEC1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
+/*Footer*/
+footer {
+    text-align: center;
+}
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+    color: #C6BEC1;
+}
+
+
+
+/*Work Experience*/
+.work {
+    background: #9B7682;
+    color: #211A1C;
+    background: url(../images/cesar-couto-unsplash-work.jpg) no-repeat fixed;
+    background-size: cover;
+}
+h3 ~ p {
+    margin: 0;
+}
+.job-description {
+    margin-bottom: 25px;
+}
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+/*Columns are uneven currently without the float cleared below*/
+.col-narrow {
+    clear: both;
+}
+
+
+/*Education*/
+.education {
+    background: #211A1C;
+    background: linear-gradient(rgba(33,26,28, 0.8), rgba(33,26,28, 0.5)),
+                 url(../images/ksu2.jpg) no-repeat fixed;
+    background-size: cover;
+    color: #9B7682;
+    text-shadow: 2px 2px 2px #211A1C;
+}
+p + h3 {
+    margin-top: 30px;
+}
+.education-description p:first-of-type {
+  margin-top: 0;
+}
+
+
+/* Media Queries */
+@media (min-width: 900px) {
+  .col-narrow {
+      width: 30%;
+      float: left;
+  }
+  .col-wide {
+      width: 70%;
+      float: right;
+      padding-left: 20px;
+  }
+}
+@media (max-width: 899px) {
+  header {
+    text-align: center;
+  }
+  .profile-img {
+    width: 200px;
+  }
+}
+
+
+
+/* Resume Page CSS */
+
+.resumepage h1 {
+  padding-top: 20px;
+}

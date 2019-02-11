@@ -105,6 +105,17 @@ nav a {
   text-transform: uppercase;
   font-weight: 700;
 }
+nav a:hover {
+  background-color: lavender;
+  color: black;
+}
+nav .active {
+  background-color: lavender;
+  color: black;
+}
+nav .icon {
+  display: none;
+}
 
 
 /*Footer*/
@@ -176,8 +187,12 @@ p + h3 {
   }
   .profile-img {
     width: 200px;
+    margin-top: 60px;
   }
-}
+  header h1, header h2 {
+    text-align: center;
+    margin: 0;
+  }
 
 
 

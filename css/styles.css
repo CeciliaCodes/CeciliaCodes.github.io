@@ -97,6 +97,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  transition: top 0.5s; /* Transition effect when sliding down (and up) */
 }
 nav a {
   display: inline-block;
@@ -113,9 +114,7 @@ nav .active {
   background-color: lavender;
   color: black;
 }
-nav .icon {
-  display: none;
-}
+
 
 
 /*Footer*/
@@ -184,14 +183,16 @@ p + h3 {
 @media (max-width: 899px) {
   header {
     text-align: center;
+    float: none;
   }
   .profile-img {
     width: 200px;
     margin-top: 60px;
   }
   header h1, header h2 {
+    font-size: 200%;
     text-align: center;
-    margin: 0;
+    float: none;
   }
 
 
